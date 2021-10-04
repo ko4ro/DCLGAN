@@ -105,7 +105,7 @@ class BaseOptions():
         # save and return the parser
         self.parser = parser
         if self.cmd_line is None:
-            return parser.parse_args()
+            return parser.parse_args(args=[])
         else:
             return parser.parse_args(self.cmd_line)
 
